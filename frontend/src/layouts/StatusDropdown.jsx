@@ -99,7 +99,6 @@ const ActionItemsTable = () => {
         </table>
       </div>
 
-      {/* The image shows this for illustration; here it's presented cleanly below the table */}
       <p className="text-sm font-semibold text-gray-600 mb-0 mt-5">Statuses in dropdown</p>
       <div className="mt-8 ml-110">
         

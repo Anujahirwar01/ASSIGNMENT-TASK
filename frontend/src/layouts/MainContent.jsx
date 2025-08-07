@@ -241,7 +241,6 @@ const getOnlineOfflineClass = (type) => {
         : "bg-gray-200 text-gray-800 border-gray-600";
 };
 
-// UserList component that appears on hover
 const ParticipantUserList = ({ participants, position }) => {
     return (
         <div 
@@ -334,7 +333,7 @@ const MainContent = () => {
             </div>
             <div className="p-4 bg-white mt-1 rounded-t-lg border border-gray-300">
                 <div className="flex items-center space-x-4">
-                    {/* Search Input */}
+                   
                     <div className="relative flex-1">
                         <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                         <input
@@ -343,7 +342,7 @@ const MainContent = () => {
                             className="w-full pl-10 pr-4 py-2 border text-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
                         />
                     </div>
-                    {/* Filter Dropdowns */}
+                 
                     <div className="flex space-x-4">
                         <select className="px-4 py-2 border rounded-md text-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500">
                             <option>Buyer Name</option>
@@ -369,7 +368,7 @@ const MainContent = () => {
                     </div>
                 </div>
             </div>
-            {/* The new div for the table */}
+            {/* The div for the table */}
             <div className="border border-t-0 border-gray-300 bg-white shadow-sm overflow-x-auto scrollbar-hide">
                 <table className="min-w-full divide-y mb-40 divide-gray-200">
                     <thead className="bg-gray-50">
