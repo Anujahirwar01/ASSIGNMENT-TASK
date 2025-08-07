@@ -1,42 +1,68 @@
-Setup Instructions for Vite + React Project
+# Vite + React Frontend Setup Guide
 
-This guide helps you run the Vite + React frontend project locally using npm.
+This project uses **Vite** as the frontend build tool and **React** for the UI library.
 
-Prerequisites
+## 📦 Prerequisites
 
-Node.js installed (Recommended: v18 or higher)
+Before running the project, ensure the following are installed:
 
-npm installed (comes with Node.js)
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- npm (comes bundled with Node.js)
 
-Steps to Run the Project
+## 🚀 Getting Started
 
-Navigate to the frontend folder:
-Open your terminal and run:
+Follow these steps to set up and run the frontend locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+2. Navigate to the Frontend Folder
+bash
+Copy
+Edit
 cd frontend
-
-Install dependencies:
-Run this command to install all required packages:
+3. Install Dependencies
+bash
+Copy
+Edit
 npm install
+4. Install Vite Plugin (if not already)
+If you face an error like Cannot find package '@vitejs/plugin-react', run:
 
-Install Vite React plugin (only if you get an error about @vitejs/plugin-react):
-Run:
+bash
+Copy
+Edit
 npm install @vitejs/plugin-react --save-dev
-
-Run the development server:
-Run:
+5. Run the Development Server
+bash
+Copy
+Edit
 npm run dev
+6. Visit in Browser
+Open your browser and go to:
 
-Visit the app in your browser:
-Go to:
+arduino
+Copy
+Edit
 http://localhost:5173
+🛠️ Vite Config Check
+If you're getting config errors, make sure your vite.config.js looks like:
 
-Notes
+js
+Copy
+Edit
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-If vite.config.js throws an error, make sure it looks like this:
-
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 export default defineConfig({
-plugins: [react()],
-})
+  plugins: [react()],
+});
+🧹 Troubleshooting
+Delete node_modules and package-lock.json if errors persist:
 
+bash
+Copy
+Edit
+rm -rf node_modules package-lock.json
+npm install
